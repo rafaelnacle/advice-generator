@@ -8,6 +8,10 @@ export const Container = styled.div`
   align-items: center;
   max-width: 800px;
   margin: 0 auto;
+
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
 `;
 
 export const Card = styled.div`
@@ -18,7 +22,6 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   
-
   border-radius: 20px;
 
   background: ${({ theme }) => theme.colors.neutral.darkGrayish};
@@ -42,6 +45,19 @@ export const Card = styled.div`
     margin-bottom: 20px;
     width: 70%;
     align-self: center;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      margin: 20px;
+      color: ${({ theme }) => theme.colors.primary.lightCyan};
+      font-size: 1.8rem;
+    }
+    height: 500px;
+    .divider {
+      width: 90%;
+      margin-bottom: 20px;
+    }
   }
 `
 

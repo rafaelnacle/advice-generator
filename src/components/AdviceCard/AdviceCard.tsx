@@ -2,15 +2,21 @@ import { ButtonDice, Card, Container } from "./styles";
 import dividerDesktop from '../../assets/images/pattern-divider-desktop.svg'
 import iconDice from '../../assets/images/icon-dice.svg'
 
-export default function AdviceCard() {
+export interface Props {
+  id: number;
+  advice: string;
+  generateNew: any;
+}
+
+export default function AdviceCard(props: Props) {
   return (
     <Container>
       <Card>
-        <p>Advice #177</p>
-        <h1>"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h1>
+        <p>Advice #{props.id}</p>
+        <h1><q>{props.advice}</q></h1>
         <img className="divider" src={dividerDesktop} alt="Divider" />
 
-        <ButtonDice>
+        <ButtonDice onClick={props.generateNew}>
           <img src={iconDice} alt="Dice Icon" />
         </ButtonDice>
       </Card>
