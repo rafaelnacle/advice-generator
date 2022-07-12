@@ -8,6 +8,7 @@ export const Container = styled.div`
   align-items: center;
   max-width: 800px;
   margin: 0 auto;
+  flex-direction: column;
 
   @media only screen and (max-width: 600px) {
     width: 90%;
@@ -88,5 +89,23 @@ export const ButtonDice = styled.button`
 
   img {
     width: 70%;
+  }
+`
+
+export const Attribution = styled.footer`
+  position: absolute;
+  bottom: 0;
+
+  color: ${({ theme }) => theme.colors.primary.lightCyan};
+
+  a {
+    color: ${({ theme }) => theme.colors.primary.neonGreen};
+    text-decoration: none;
+  }
+
+  margin-bottom: 30px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
   }
 `

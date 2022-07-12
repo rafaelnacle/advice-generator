@@ -1,4 +1,4 @@
-import { ButtonDice, Card, Container } from "./styles";
+import { Attribution, ButtonDice, Card, Container } from "./styles";
 import dividerDesktop from '../../assets/images/pattern-divider-desktop.svg'
 import iconDice from '../../assets/images/icon-dice.svg'
 
@@ -20,6 +20,14 @@ export default function AdviceCard(props: Props) {
           <img src={iconDice} alt="Dice Icon" />
         </ButtonDice>
       </Card>
+
+
+      <Attribution>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/rafaelnacle" target="_blank">Rafael Nacle</a>.
+      </Attribution>
     </Container>
+
+
   )
 }
