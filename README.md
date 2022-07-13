@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/advice-generator-made-in-react-and-typescript-kPdV0WZjRK)
+- Live Site URL: [Add live site URL here](https://the-awesome-rafaelnacle-site.netlify.app/)
 
 ## My process
 This time I tried to use Vite and Typescript to make things a bit more interesting, then I started with the default styles and themes, created the card component with typed props and their respective styles. All the styles were made using styled components.
