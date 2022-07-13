@@ -21,7 +21,6 @@ export default function AdviceCard(props: Props) {
         </ButtonDice>
       </Card>
 
-
       <Attribution>
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="https://github.com/rafaelnacle" target="_blank">Rafael Nacle</a>.

@@ -9,6 +9,6 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.colors.neutral.darkBlue};
+    background: ${({ theme }: any) => theme.colors.neutral.darkBlue};
   }
 `

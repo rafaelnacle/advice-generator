@@ -7,17 +7,18 @@ import AdviceCard from '../AdviceCard/AdviceCard'
 import { Container } from './styles'
 import axios, { AxiosResponse } from 'axios'
 
-type adviceProps = {
+
+interface IAdviceProps {
   id: number;
   advice: string;
 }
 
 function App() {
-  const [adviceData, setAdviceData] = useState<adviceProps[]>([]);
+  const [adviceData, setAdviceData] = useState<IAdviceProps>({ id: 0, advice: '' });
 
   const getAdvices = () => {
     axios
-      .get<adviceProps[]>('https://api.adviceslip.com/advice')
+      .get<IAdviceProps>('https://api.adviceslip.com/advice')
       .then((response: AxiosResponse) => {
         setAdviceData(response.data.slip)
       })
@@ -31,7 +32,6 @@ function App() {
   const handleClick = () => {
     getAdvices()
   }
-
 
   return (
     <ThemeProvider theme={defaultTheme}>
